@@ -41,7 +41,10 @@ class App extends React.Component {
       <div>
         <Title />
         <Form calculateStreak={this.calculateStreak} />
-        <Streak streak={this.state.streak} />
+        <Streak 
+        streak={this.state.streak}
+        error={this.state.error}
+        />
       </div>
     );
   }
