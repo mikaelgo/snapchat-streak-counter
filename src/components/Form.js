@@ -5,9 +5,9 @@ class Form extends React.Component {
   render() {
     return (
       <form onSubmit={this.props.calculateStreak}>
-      <img alt={logo} src={logo}/>
+      <img className="img-fluid" alt={logo} src={logo}/>
         <input type="text" name="streak" placeholder="enter streak..." />
-        <button>Get Streak</button>
+        <button className="btn-block">Get Streak</button>
       </form>
     );
   }

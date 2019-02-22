@@ -3,9 +3,9 @@ import React from "react";
 class Streak extends React.Component {
   render() {
     return (
-      <div>
+      <div className="animated bounceIn" >
         {this.props.streak && (
-          <p className="streak__key">
+          <p className=" streak__key">
             Streak started: <span>{this.props.streak}</span>
           </p>
         )}
