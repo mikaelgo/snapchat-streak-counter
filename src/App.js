@@ -39,12 +39,19 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Title />
-        <Form calculateStreak={this.calculateStreak} />
-        <Streak 
-        streak={this.state.streak}
-        error={this.state.error}
-        />
+        <div className="wrapper">
+          <div className="main">
+            <div className="container-fluid">
+              <div className="row">
+                <div className="col-8 form-container">
+                  <Title />
+                  <Form calculateStreak={this.calculateStreak} />
+                  <Streak streak={this.state.streak} error={this.state.error} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

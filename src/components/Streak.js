@@ -5,7 +5,7 @@ class Streak extends React.Component {
     return (
       <div>
         {this.props.streak && (
-          <p>
+          <p className="streak__key">
             Streak started: <span>{this.props.streak}</span>
           </p>
         )}

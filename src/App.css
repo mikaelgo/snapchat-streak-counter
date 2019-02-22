@@ -1,1 +1,76 @@
+.wrapper {
+    background: #FFFC00;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @font-face {
+    font-family: brushFont;
+    src: url(fonts/Violaceous.ttf);
+  }
+
+  .form-container{
+      display: inline-block;
+
+      justify-content: center;
+      align-items: center;
+      margin:auto;
+  }
+
+.form-container__title{
+    text-anchor: middle;
+    text-align: center;
+    font-size: 80px;
+    display: block;
+    margin: auto;
+    margin-block-end: 100px;
+    font-family: brushFont;
+    white-space: nowrap;
+}
+
+.streak__key {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-block-start: 20px;
+}
+
+input[type=text]{
+    border-radius: 5px;
+    border: none;
+    background-color: aliceblue;
+    width: 80%;
+    margin: auto;
+    display: block;
+    padding: 10px 15px;
+    margin-block-end: 20px;
+}
+
+button{
+    width: 50%;
+    margin: auto;
+    display: block;
+    padding: 10px 15px;
+    border: 1px solid #333;
+    color: #333;
+    background-color: aliceblue;
+    font-weight: 700;
+    text-transform: lowercase;
+    transition: all .2s ease-in-out;
+
+
+}
+
+button:hover {
+    background: #333;
+    border: 1px solid #333;
+    color: aliceblue;
+    border-radius: 30px;
+  }
+
+img{
+    margin: auto;
+    display: block;
+    margin-block-end: 20px;
+}
 
