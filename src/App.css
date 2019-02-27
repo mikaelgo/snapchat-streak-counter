@@ -38,11 +38,28 @@
 
 .title-container__title {
   font-size: 10vw;
+  
+}
+
+.streak-container {
+  margin:auto;
+}
+
+@keyframes streakAnimation{
+  0%{
+      transform: rotate(0) translateY(-90%);
+      opacity: 0;
+      }
+  99%{
+      transform: rotate(0) translateY(0);
+      }
 }
 
 .streak__key {
+  animation: streakAnimation 1s forwards 0s linear;
   font-family: Arial, Helvetica, sans-serif;
   margin-block-start: 20px;
+  margin-block-end: 50px;
 }
 
 input[type="text"] {

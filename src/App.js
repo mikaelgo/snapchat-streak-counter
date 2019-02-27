@@ -3,6 +3,7 @@ import Title from "./components/Title";
 import Form from "./components/Form";
 import Streak from "./components/Streak";
 
+
 class App extends React.Component {
   state = {
     streak: undefined,
@@ -36,6 +37,7 @@ class App extends React.Component {
     }
   };
 
+
   render() {
     return (
       <div>
@@ -48,15 +50,16 @@ class App extends React.Component {
                 </div>
               </div>
               <div className="row">
-                <div className="col-8 form-container">
-                  <Form calculateStreak={this.calculateStreak} />
-                </div>
-              </div>
-              <div className="row">
                 <div className="streak-container">
                   <Streak streak={this.state.streak} error={this.state.error} />
                 </div>
               </div>
+              <div className="row">
+                <div className="col-8 form-container">
+                  <Form calculateStreak={this.calculateStreak} />
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
